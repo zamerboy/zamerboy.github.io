@@ -1,60 +1,59 @@
-# Researcher
+# Resume template
 
-### [Demo Website](http://ankitsultana.com/researcher)
+*A simple Jekyll + GitHub Pages powered resume template.*
 
-A clean, single column, monospace resume template built for jekyll
+![img](images/screenshot.png)
 
-### Installation
+## Docs
 
-Simply fork the repository and edit away.
+### Running locally
 
-#### Installation via remote themes
+To test locally, run the following in your terminal:
 
-* Just setting `remote_theme: ankitsultana/researcher@gem` in `_config.yml` should work. Although in that case, I am not sure how
-you would build your site locally for testing. If you know how, open up an issue and let me know.
-* For more info, [refer this](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/).
+1. Clone repo locally
+1. `bundle install`
+2. `bundle exec jekyll serve`
+3. Open your browser to `localhost:4000`
 
-### Customization
+### Customizing
 
-* You can edit the `.md` (markdown) files as you see fit. You can also add some other markdown file, say `foo.md` in the root directory of the repository. It will then be accessible like so `{{ url of your website }}/foo`.
+First you'll want to fork the repo to your own account. Then clone it locally and customize, or use the GitHub web editor to customize.
 
-* You can of course remove `contact.md` if you don't want it
+#### Options/configuration
 
-* To set the heading, edit the `title` variable in `_config.yml`
+Most of the basic customization will take place in the `/_config.yml` file. Here is a list of customizations available via `/_config.yml`:
 
-* To edit the `links` mentioned on the navigation bar, you can edit `_config.yml`. For example:
+[...write these out...]
 
-```
-nav:
- - name: "About"
-   link: "/researcher/"
- - name: "Resume"
-   link: "resume.pdf"
- - name: "Contact"
-   link: "contact"
-```
+#### Editing content
 
-* You can change the accent (color of hyperlinks) by editing the `accent` variable in `_sass/vars.scss`
+Most of the content configuration will take place in the `/_layouts/resume.html` file. Simply edit the markup there accordingly
 
-* You can setup google analytics, by setting `tracking_id` in `_config.yml`
+### Publishing to GitHub Pages for free
 
-* To add a profile picture, make sure to give the image tag the class `profile-picture`. In other words,do it like so:
+[GitHub Pages](https://pages.github.com/) will host this for free with your GitHub account. Just make sure you're using a `gh-pages` branch, and the site will automatically be available at `yourusername.github.io/resume-template` (you can rename the repo to resume for your own use if you want it to be available at `yourusername.github.io/resume`). You can also add a CNAME if you want it to be available at a custom domain...
 
-```html
-<img class="profile-picture" src="sherlock.jpg">
-```
+### Configuring with your own domain name
 
-* You can remove/customize the footer as you like by setting the
-appropriate variables in `_config.yml`
+To setup your GH Pages site with a custom domain, [follow the instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) on the GitHub Help site for that topic.
 
-* (New in v1.2.0) You can add institute logo at the top, by setting `ins_logo` in `_config.yml`. If you want
-to adjust the logo's size, try setting `max-height` in `#ins-logo` in file `./_sass/_style.scss` to the desired
-value
+### Themes
 
-![Institute Logo Image Sample](https://github.com/ankitsultana/assets/raw/master/ins-logo-sample.png)
+Right now resume-template only has one theme. More are coming :soon: though. :heart:
 
-**Note:** Customizing the accent color might cause merge conflicts if you later try to merge from `bk2dcradle/researcher` to fetch updates/patches etc. (applicable only if you have forked).
+## Roadmap
 
-### License
+A feature roadmap is [available here](https://github.com/jglovier/resume-template/projects/1). If you features suggestions, please [open a new issue](https://github.com/jglovier/resume-template/issues/new).
 
-[GNU GPL v3](https://github.com/bk2dcradle/researcher/blob/gh-pages/LICENSE)
+## Contributing
+
+If you spot a bug, or want to improve the code, or even make the dummy content better, you can do the following:
+
+1. [Open an issue](https://github.com/jglovier/resume-template/issues/new) describing the bug or feature idea
+2. Fork the project, make changes, and submit a pull request
+
+## License
+
+The code and styles are licensed under the MIT license. [See project license.](LICENSE) Obviously you should not use the content of this demo repo in your own resume. :wink:
+
+Disclaimer: Use of Homer J. Simpson image and name used under [Fair Use](https://en.wikipedia.org/wiki/Fair_use) for educational purposes. Project license does not apply to use of this material.
